@@ -7,8 +7,11 @@ import Image from 'next/image'
 
 export default function Competences() {
     const router = useRouter();
-    const lang = router.query.lang;
-    let [language, setLanguage] = lang ? useState(lang) : useState("fr");
+    let lang = router.query.lang;
+    if (!lang) {
+      lang = "fr";
+    }
+    let [language, setLanguage] = useState(lang);
     return(
       <>
       <Head>
