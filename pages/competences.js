@@ -38,7 +38,7 @@ export default function Competences() {
               <h3>HTML</h3>
             </div>
             <div className="item">
-              <img src="/css.png"/>
+              <img src="/clicktest.png"/>
               <h3>CSS</h3>
             </div>
             <div className="item">
