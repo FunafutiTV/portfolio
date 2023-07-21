@@ -33,12 +33,12 @@ export default function Projets() {
           <h2>{(language === "fr") ? "Mes projets :" : "My projects :"}</h2>
           <div className="item_list deux">
             <div className="big_item">
-              <a target="_blank" href="https://clicktest.vercel.app/"><img src="/clicktest.png"/></a>
+              <a target="_blank" href="https://clicktest.vercel.app/"><img src="/clicktest.PNG"/></a>
               <h3>{(language === "fr") ? "Testeur de clics" : "Click tester"}</h3>
               <p>{(language === "fr") ? "Compteur de clics qui calcule la vitesse des clics et affiche les meilleurs scores dans un classement. Créé avec NextJS avec l'aide d'une base de données MongoDB, et déployé avec Vercel." : "Clicks counter which calculates the click speed and displays a ranking of the high scores. Created with NextJS with the help of a MongoDB database, and deployed to Vercel."}</p>
             </div>
             <div className="big_item">
-              <a target="_blank" href="https://countrygame.vercel.app/"><img src="/countrygame.png"/></a>
+              <a target="_blank" href="https://countrygame.vercel.app/"><img src="/countrygame.PNG"/></a>
               <h3>{(language === "fr") ? 'Jeu des "presque pays"' : '"Almost countries" game'}</h3>
               <p>{(language === "fr") ? 'Jeu dont l\'objectif est de trouver chaque jour le nouveau "presque pays" choisi aléatoirement en utilisant des indices. Créé avec NextJS avec l\'aide d\'une base de données MongoDB, et déployé avec Vercel.' : 'Game where the goal is to guess the "almost country" randomly chosen everyday using hints. Created with NextJS with the help of a MongoDB database, and deployed to Vercel.'}</p>
             </div>
