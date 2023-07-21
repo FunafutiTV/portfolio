@@ -30,8 +30,8 @@ export default function Projets() {
           <Link href={{ pathname:"/", query: { lang: language } }}><img className="nk" src="/nk.png" alt={(language === "fr") ? "Page d'accueil" : "Home page"}/></Link>
         </nav>
         <div className='main_content'>
-          <h2>{(language === "fr") ? "Mes projets :" : "My projects :"}</h2>
-          <div className="item_list deux">
+          <h2 className="main_content_child">{(language === "fr") ? "Mes projets :" : "My projects :"}</h2>
+          <div className="item_list deux main_content_child">
             <div className="big_item">
               <a target="_blank" href="https://clicktest.vercel.app/"><img src="/clicktest.PNG"/></a>
               <h3>{(language === "fr") ? "Testeur de clics" : "Click tester"}</h3>
@@ -43,7 +43,7 @@ export default function Projets() {
               <p>{(language === "fr") ? 'Jeu dont l\'objectif est de trouver chaque jour le nouveau "presque pays" choisi aléatoirement en utilisant des indices. Créé avec NextJS avec l\'aide d\'une base de données MongoDB, et déployé avec Vercel.' : 'Game where the goal is to guess the "almost country" randomly chosen everyday using hints. Created with NextJS with the help of a MongoDB database, and deployed to Vercel.'}</p>
             </div>
           </div>
-          <p>{(language === "fr") ? "Ce portfolio fait également parti de mes projets ! Il a été créé avec l'aide de NextJS, et déployé avec Vercel." : "This portfolio is also one of my projects ! It was created with NextJS, and deployed to Vercel."}</p>
+          <p className="main_content_child" id="main_content_subtext">{(language === "fr") ? "Ce portfolio fait également parti de mes projets ! Il a été créé avec l'aide de NextJS, et déployé avec Vercel." : "This portfolio is also one of my projects ! It was created with NextJS, and deployed to Vercel."}</p>
         </div>
       </div>
       </>

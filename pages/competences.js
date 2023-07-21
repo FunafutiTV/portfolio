@@ -31,8 +31,8 @@ export default function Competences() {
           <Link href={{ pathname:"/", query: { lang: language } }}><img className="nk" src="/nk.png" alt={(language === "fr") ? "Page d'accueil" : "Home page"}/></Link>
         </nav>
         <div className='main_content'>
-          <h2>{(language === "fr") ? "Les langages que je parle :" : "Languages I speak :"}</h2>
-          <div className="item_list trois">
+          <h2 className="main_content_child">{(language === "fr") ? "Les langages que je parle :" : "Languages I speak :"}</h2>
+          <div className="main_content_child item_list trois">
             <div className="item">
               <img src="/html.png"/>
               <h3>HTML</h3>
@@ -58,8 +58,8 @@ export default function Competences() {
               <h3>React</h3>
             </div>
           </div>
-          <h2>{(language === "fr") ? "Les outils que j'utilise :" : "Tools I use :"}</h2>
-          <div className="item_list deux">
+          <h2 className="main_content_child">{(language === "fr") ? "Les outils que j'utilise :" : "Tools I use :"}</h2>
+          <div className="main_content_child item_list deux">
             <div className="item">
               <img src="/github.png"/>
               <h3>GitHub</h3>
