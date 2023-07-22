@@ -29,6 +29,14 @@ export default function Contact() {
           </div>
           <Link href={{ pathname:"/", query: { lang: language } }}><img className="nk" src="/nk.png" alt={(language === "fr") ? "Page d'accueil" : "Home page"}/></Link>
         </nav>
+        <div className="main_content">
+          <p className="para">{language === "fr" ? "Vous souhaitez me contacter ou obtenir plus d'informations sur moi et mes travaux ? Utilisez les liens ci-dessous. Je répondrai aux messages au plus vite." : "Do you wish to contact me or get more information about me and my work ? Use the links below. I will answer messages as soon as I can."}</p>
+          <ul id="contacts">
+            <li><img className="icon" src="/github.png"/><a href="https://github.com/FunafutiTV/"><strong>GitHub :</strong> <i>FunafutiTV</i></a></li>
+            <li><img className="icon" src="/linkedin.png"/><a href="https://www.linkedin.com/in/nathanael-kubski-a70782284/"><strong>LinkedIn :</strong> <i>Nathanael Kubski</i></a></li>
+            <li><img className="icon" src="/mail.png"/><span id="mail"><strong>Mail :</strong></span></li>
+          </ul>
+        </div>
       </div>
       </>
     )

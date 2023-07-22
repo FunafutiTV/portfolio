@@ -38,7 +38,7 @@ nav {
   width: 16vw;
 }
 
-nav ul {
+ul {
   list-style: none;
   padding: 0;
 }
@@ -185,6 +185,33 @@ nav ul li:active {
 
 .big_item p {
   padding : 0 2vw 0 2vw;
+}
+
+#contacts {
+  text-align: left;
+  font-size: 140%;
+  margin-top: 5vw;
+}
+
+#contacts li {
+  margin-top: 2vw;
+}
+
+.icon {
+  width: 2.5vw;
+  padding-right: 0.7vw;
+  position: relative;
+  top: 0.5vw;
+}
+
+#contacts li a, #mail {
+  color: white;
+  text-decoration: none;
+  padding: 0.3vw;
+}
+
+#contacts li a:hover, #contacts li a:focus {
+  background-color: rgb(120, 120, 120);
 }
 
 .language {
