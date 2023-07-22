@@ -4,11 +4,11 @@ export default function LanguagepPicker({ language, setLanguage }) {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
+        setIsDropdownOpen(!isDropdownOpen); // Close dropdown when the mouse leaves the button
     };
 
     const openDropdown = () => {
-        setIsDropdownOpen(true);
+        setIsDropdownOpen(true); // Open dropdown when the mouse is on the button
     };
 
     function handleFrenchClick() {
@@ -18,7 +18,7 @@ export default function LanguagepPicker({ language, setLanguage }) {
 
     function handleEnglishClick() {
         setLanguage("en");
-        setIsDropdownOpen(false);
+        setIsDropdownOpen(false); // When a language is chosen, language is set to its value and the dropdown is closed
     }
 
     return (

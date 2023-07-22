@@ -9,12 +9,12 @@ import { useRouter } from 'next/router'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const router = useRouter();
+  const router = useRouter(); // useRouter is used to keep the language chosen by the user between the different pages (il will appear in the URL)
   let lang = router.query.lang;
   if (!lang) {
     lang = "fr";
   }
-  let [language, setLanguage] = useState(lang);
+  let [language, setLanguage] = useState(lang); // language is set to the language chosen by the user. It is French by default
   return (
     <>
       <Head>
