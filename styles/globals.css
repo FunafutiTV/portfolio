@@ -1,7 +1,7 @@
 /* General */
 
 html {
-  font-size: 2vw;
+  font-size: 2.4vw;
   font-family: "Roboto", sans-serif;
   color: white;
   width: 100%;
@@ -34,23 +34,25 @@ body {
 /* Navigation Menu */
 
 nav {
-  position: fixed;
+  position: relative;
   left: 0;
   top: 0;
   background-color: rgb(40, 40, 40);
-  height: 100%;
-  width: 16vw;
+  width: 100%;
+  display: flex;
 }
 
-ul {
+nav ul {
   list-style: none;
   padding: 0;
+  width: 70%;
 }
 
 nav ul li {
   border: 0.2vw solid rgb(60, 60, 60);
-  padding: 1vw;
+  padding: 1vh;
   background-color: rgb(80, 80, 80);
+  display: inline-block;
 }
 
 nav ul li:hover, nav ul li:focus {
@@ -68,9 +70,10 @@ nav ul li:active {
 }
 
 .nk {
-  width: 6vw;
+  height: 8vw;
   position: absolute;
-  bottom: 0;
+  right: 0;
+  top: 1vh;
 }
 
 .current_page, .current_page:hover, .current_page:focus, .current_page:active {
@@ -81,7 +84,7 @@ nav ul li:active {
 /* Main Content */
 
 .main_content {
-  margin: 0 10vw 0 26vw;
+  margin: 5vh 10vw 0 10vw;
   text-align: center;
 }
 
@@ -173,18 +176,22 @@ nav ul li:active {
   grid-template-columns: 1fr 1fr;
 }
 
+.bigDeux {
+  grid-template-columns: 1fr;
+}
+
 .item img {
   width: 10vw;
 }
 
 .big_item a img {
-  width: 25vw;
+  width: 50vw;
   transition: 0.2s;
   opacity: 80%;
 }
 
 .big_item a:active img, .big_item a:focus img, .big_item a:hover img {
-  width: 32vw;
+  width: 64vw;
   opacity: 100%;
   transition: 0.5s;
 }
@@ -203,6 +210,8 @@ nav ul li:active {
   text-align: left;
   font-size: 140%;
   margin-top: 5vw;
+  list-style: none;
+  padding: 0;
 }
 
 #contacts li {
@@ -210,10 +219,10 @@ nav ul li:active {
 }
 
 .icon {
-  width: 2.5vw;
-  padding-right: 0.7vw;
+  width: 5vh;
+  padding-right: 1.4vh;
   position: relative;
-  top: 0.5vw;
+  top: 1vh;
 }
 
 #contacts li a, #mail {
@@ -229,7 +238,9 @@ nav ul li:active {
 /* Language Picker */
 
 .language {
-  position: relative;
+  position: absolute;
+  top: 4.25vh;
+  right: 10vw;
 }
 
 #language-picker {
@@ -259,10 +270,12 @@ nav ul li:active {
 
 /* Media Queries */
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width:48em) {
+
   html {
-      font-size: 1.6vw;
+    font-size: 1.8vw;
   }
+
 }
 
 @media screen and (min-width:66em) {
@@ -270,7 +283,62 @@ nav ul li:active {
   html {
       font-size: 1.2vw;
   }
+
   #language-picker button {
       width: 6.5vw;
   }
+
+  nav {
+    position: fixed;
+    height: 100%;
+    width: 16vw;
+    display: block;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  nav ul li {
+    display: list-item;
+    padding: 1vw;
+  }
+
+  .nk {
+    bottom: 0;
+    top: unset;
+    right: unset;
+    left: 0;
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .main_content {
+    margin: 0 10vw 0 26vw;
+  }
+
+  .language {
+    position: relative;
+    top: unset;
+    right: unset;
+  }
+
+  .icon {
+    width: 2.5vw;
+    padding-right: 0.7vw;
+    top: 0.5vw;
+  }
+
+  .bigDeux {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .big_item a img {
+    width: 25vw;
+  }
+
+  .big_item a:active img, .big_item a:focus img, .big_item a:hover img {
+    width: 32vw;
+  }
+
 }

@@ -31,7 +31,7 @@ export default function Projets() {
         </nav>
         <div className='main_content'>
           <h2 className="main_content_child">{(language === "fr") ? "Mes projets :" : "My projects :"}</h2>
-          <div className="item_list deux main_content_child">
+          <div className="item_list bigDeux main_content_child">
             <div className="big_item">
               <a target="_blank" href="https://clicktest.vercel.app/"><img src="/clicktest.PNG"/></a>
               <h3>{(language === "fr") ? "Testeur de clics" : "Click tester"}</h3>
