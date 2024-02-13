@@ -35,7 +35,8 @@ export default function Home() {
         </nav>
         <div className="main_content para">
           <h1>Nathanael Kubski</h1>
-          <p>{(language === "fr") ? "Je suis un développeur français en apprentissage. Diplômé d'une licence en Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales, j'ai commencé à me former à la programmation en autodidacte il y a un an, en plus de mes études. Bien que je sois plus à l'aise du côté front-end, je touche également au back-end lorsque c'est nécessaire. Je suis également intéressé par la technologie de la Blockchain et j'aimerais me spécialiser dans celle-ci." : "I'm a French apprentice developper. Holder of a Bachelor's Degree in Mathematics and Computer Science Applied to Human and Social Sciences, I started learning programming on my own, on top of my studies. Even though I feel more at ease with front-end, I can also touch back-end when needed. I'm also interested by the Blockchain technology and I'd like to specialize in it."}</p>
+          <p>{(language === "fr") ? "Présent dans l’écosystème Web3 depuis 3 ans, j’ai commencé à apprendre le développement web en autodidacte en 2022 pour consolider les bases acquises durant mes études, afin de travailler en tant que développeur blockchain. J’ai récemment suivi une formation en développement blockchain dans une école renommée afin d’atteindre cet objectif." : "Being part of the Web3 ecosystem for 3 years, I started to learn Web Development on my own in 2022 to consolidate the basics I got from my academic studies, in order to eventually work as a Blockchain Developer. I recently took a Blockchain development course in a renowned school in the field, to finally achieve this goal."}</p>
+          <a className="cv" href={(language === "fr") ? "cvfr.pdf" : "cven.pdf"} target="_blank">{(language === "fr") ? "Voir mon CV" : "See my CV"}</a>
         </div>
       </div>
     </>

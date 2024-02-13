@@ -56,12 +56,31 @@ export default function Competences() {
               <img src="/react.png"/>
               <h3>React</h3>
             </div>
+            <div className="item">
+              
+            </div>
+            <div className="item">
+              <img src="/solidity.png"/>
+              <h3>Solidity</h3>
+            </div>
           </div>
           <h2 className="main_content_child">{(language === "fr") ? "Les outils que j'utilise :" : "Tools I use :"}</h2>
-          <div className="main_content_child item_list deux">
+          <div className="main_content_child item_list trois">
             <div className="item">
               <img src="/github.png"/>
               <h3>GitHub</h3>
+            </div>
+            <div className="item">
+              <img src="/hardhat.png"/>
+              <h3>HardHat</h3>
+            </div>
+            <div className="item">
+              <img src="/truffle.png"/>
+              <h3>Truffle</h3>
+            </div>
+            <div className="item">
+              <img src="/foundry.png"/>
+              <h3>Foundry</h3>
             </div>
             <div className="item">
               <img src="/vercel.png"/>
@@ -74,6 +93,14 @@ export default function Competences() {
             <div className="item">
               <img src="/next.png"/>
               <h3>Next.js</h3>
+            </div>
+            <div className="item">
+              <img src="/ipfs.png"/>
+              <h3>IPFS</h3>
+            </div>
+            <div className="item">
+              <img src="/wagmi.png"/>
+              <h3>Wagmi</h3>
             </div>
           </div>
         </div>

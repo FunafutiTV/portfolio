@@ -34,7 +34,7 @@ export default function Contact() {
           <ul id="contacts">
             <li><img className="icon" src="/github.png"/><a href="https://github.com/FunafutiTV/"><strong>GitHub :</strong> <i>FunafutiTV</i></a></li>
             <li><img className="icon" src="/linkedin.png"/><a href="https://www.linkedin.com/in/nathanael-kubski-a70782284/"><strong>LinkedIn :</strong> <i>Nathanael Kubski</i></a></li>
-            <li><img className="icon" src="/mail.png"/><span id="mail"><strong>Mail :</strong></span></li>
+            <li><img className="icon" src="/mail.png"/><a href="mailto:nathanaelkubski@gmail.com"><strong>Mail :</strong> <i>nathanaelkubski@gmail.com</i></a></li>
           </ul>
         </div>
       </div>
