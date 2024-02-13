@@ -33,22 +33,22 @@ export default function Projets() {
           <h2 className="main_content_child">{(language === "fr") ? "Mes projets :" : "My projects :"}</h2>
           <div className="item_list bigDeux main_content_child">
             <div className="big_item">
-              <a target="_blank" href="https://clicktest.vercel.app/"><img src="/clicktest.PNG"/></a>
+              <a target="_blank" href="https://clicktest.vercel.app/"><img src="/clicktest.png"/></a>
               <h3>{(language === "fr") ? "Testeur de clics" : "Click tester"}</h3>
               <p>{(language === "fr") ? "Compteur de clics qui calcule la vitesse des clics et affiche les meilleurs scores dans un classement. Créé avec NextJS avec l'aide d'une base de données MongoDB, et déployé avec Vercel." : "Clicks counter which calculates the click speed and displays a ranking of the high scores. Created with NextJS with the help of a MongoDB database, and deployed to Vercel."}</p>
             </div>
             <div className="big_item">
-              <a target="_blank" href="https://countrygame.vercel.app/"><img src="/countrygame.PNG"/></a>
+              <a target="_blank" href="https://countrygame.vercel.app/"><img src="/countrygame.png"/></a>
               <h3>{(language === "fr") ? 'Jeu des "presque pays"' : '"Almost countries" game'}</h3>
               <p>{(language === "fr") ? 'Jeu dont l\'objectif est de trouver chaque jour le nouveau "presque pays" choisi aléatoirement en utilisant des indices. Créé avec NextJS avec l\'aide d\'une base de données MongoDB, et déployé avec Vercel.' : 'Game where the goal is to guess the "almost country" randomly chosen everyday using hints. Created with NextJS with the help of a MongoDB database, and deployed to Vercel.'}</p>
             </div>
             <div className="big_item">
-              <a target="_blank" href="https://alyra-project3-voting.vercel.app/"><img src="/voting.PNG"/></a>
+              <a target="_blank" href="https://alyra-project3-voting.vercel.app/"><img src="/voting.png"/></a>
               <h3>{(language === "fr") ? 'Application de vote' : 'Voting app'}</h3>
               <p>{(language === "fr") ? 'Application décentralisée permettant au détenteur du smart contract de lancer un vote, dans lequel les utilisateurs autorisés peuvent soumettre des propositions et voter. Frontend créé avec NextJS, Wagmi, ChakraUI et déployé avec Vercel. Backend créé avec Solidity, Hardhat et déployé sur la blockchain de test Sepolia. Réalisé en collaboration avec Thomas Thierry' : 'Decentralized application which allows the smart contract\'s owner to start a voting session, in which the whitelisted users can submit proposals and vote. Frontend created with NextJS, Wagmi, ChakraUI and deployed to Vercel. Backend created with Solidity, HardHat and deployed to the Sepolia testnet. Made in collaboration with Thomas Thierry.'}</p>
             </div>
             <div className="big_item">
-              <a target="_blank" href="https://blocknews-seven.vercel.app/"><img src="/blocknews.PNG"/></a>
+              <a target="_blank" href="https://blocknews-seven.vercel.app/"><img src="/blocknews.png"/></a>
               <h3>{(language === "fr") ? 'Réseau social BlockNews' : 'BlockNews social network'}</h3>
               <p>{(language === "fr") ? 'Application décentralisée intégrant les interactions principales d\'un réseau social avec la technologie blockchain. Frontend créé avec NextJS, Wagmi, ChakraUI et déployé avec Vercel. Backend créé avec Solidity, Hardhat et déployé sur la blockchain de test Sepolia.' : 'Decentralized application which allows the main interactions of a social network, using the blockchain technology. Frontend created with NextJS, Wagmi, ChakraUI and deployed to Vercel. Backend created with Solidity, HardHat and deployed to the Sepolia testnet.'}</p>
             </div>
