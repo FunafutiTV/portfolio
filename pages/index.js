@@ -36,7 +36,7 @@ export default function Home() {
         <div className="main_content para">
           <h1>Nathanael Kubski</h1>
           <p>{(language === "fr") ? "Présent dans l’écosystème Web3 depuis 3 ans, j’ai commencé à apprendre le développement web en autodidacte en 2022 pour consolider les bases acquises durant mes études, afin de travailler en tant que développeur blockchain. J’ai récemment suivi une formation en développement blockchain dans une école renommée afin d’atteindre cet objectif." : "Being part of the Web3 ecosystem for 3 years, I started to learn Web Development on my own in 2022 to consolidate the basics I got from my academic studies, in order to eventually work as a Blockchain Developer. I recently took a Blockchain development course in a renowned school in the field, to finally achieve this goal."}</p>
-          <a className="cv" href={(language === "fr") ? "cvfr.pdf" : "cven.pdf"} target="_blank">{(language === "fr") ? "Voir mon CV" : "See my CV"}</a>
+          <a className="cv" href={(language === "fr") ? "cvfr.pdf" : "cven.pdf"} target="_blank">{(language === "fr") ? "Voir mon CV" : "See my resume"}</a>
         </div>
       </div>
     </>
