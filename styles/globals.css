@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 /* General */
 
 html {
@@ -232,9 +234,10 @@ nav ul li:active {
 
 .cv {
   text-decoration: none;
-  padding: 0.5vw;
+  font-size: 140%;
+  padding: 1vw;
   border: 0.2vw solid black;
-  border-radius: 20px;
+  border-radius: 30px;
   background-image: linear-gradient(144deg,#230c34, #130e38 50%,#002f32);
   color: #FFFFFF;
   justify-content: center;
@@ -321,6 +324,118 @@ nav ul li:active {
   z-index: 1;
 }
 
+/* Portfolio */
+  
+.portfolio {
+  font-family: 'Patrick Hand', cursive;
+  letter-spacing: 0.5px;
+  padding: 2em 0 5em 0;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+#mainTopText {
+  text-align: center;
+  margin-bottom: 3em;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.mainPara {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+  animation: slideIn 2s ease-in-out;
+}
+
+.mainPara:nth-last-of-type(1) {
+  margin-bottom: 5em;
+}
+
+#mainJoke {
+  width: 100%;
+  height: 10em;
+  position: relative;
+}
+
+#mainBottomPara {
+  width: 100%;
+  height: 10em;
+  position: relative;
+}
+
+#mainJoke > *, #mainBottomPara > * {
+  position: absolute;
+}
+
+#mainJokeFirstImg {
+  left: 1em;
+}
+
+#mainJokeFirstText {
+  left: 8.5em;
+  top: 1em;
+}
+
+#mainJokeSecondImg {
+  top: 5em;
+  right: 1em;
+}
+
+#mainJokeSecondText {
+  right: 8.5em;
+  top: 6em;
+}
+
+#mainBottomParaImg {
+  left: 0;
+  top: 3em;
+}
+
+#mainBottomFirstText {
+  right: 0;
+  top: 6em;
+  width: 22em;
+}
+
+#mainBottomSecondText {
+  left: 8em;
+  top: 1em;
+}
+
+.mainSmallText {
+  font-size: 80%;
+  width: 100%;
+  color: rgb(217, 187, 187);
+  text-align: right;
+  transform: rotate(2deg);
+}
+
+.mainPageImage {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 0 20px;
+  object-fit: cover;
+  animation: rotateIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes rotateIn {
+  from { transform: rotate(-180deg); opacity: 0; }
+  to { transform: rotate(0); opacity: 1; }
+}
+
 /* Media Queries */
 
 @media screen and (min-width:48em) {
@@ -383,6 +498,11 @@ nav ul li:active {
     margin: 0 10vw 0 26vw;
   }
 
+  .mainPageImage {
+    width: 10em;
+    height: 10em;
+  }
+
   .language {
     position: relative;
     top: unset;
@@ -407,4 +527,40 @@ nav ul li:active {
     width: 32vw;
   }
 
+  #mainJoke {
+    height: 15em;
+  }
+
+  #mainJokeFirstImg {
+    left: 3em;
+  }
+  
+  #mainJokeFirstText {
+    left: 15.5em;
+    top: 3em;
+  }
+  
+  #mainJokeSecondImg {
+    top: 5em;
+    right: 3em;
+  }
+  
+  #mainJokeSecondText {
+    right: 15.5em;
+    top: 8em;
+  }
+
+  #mainBottomParaImg {
+    left: 0;
+  }
+  
+  #mainBottomFirstText {
+    right: 0;
+    top: 6em;
+  }
+  
+  #mainBottomSecondText {
+    left: 14em;
+    top: 1em;
+  }
 }

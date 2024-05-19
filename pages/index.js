@@ -33,10 +33,42 @@ export default function Home() {
           </div>
           <Link href={{ pathname:"/", query: { lang: language } }}><img className="nk" src="/nk.png" alt={(language === "fr") ? "Page d'accueil" : "Home page"}/></Link>
         </nav>
-        <div className="main_content para">
-          <h1>Nathanael Kubski</h1>
-          <p>{(language === "fr") ? "Présent dans l’écosystème Web3 depuis 3 ans, j’ai commencé à apprendre le développement web en autodidacte en 2022 pour consolider les bases acquises durant mes études, afin de travailler en tant que développeur blockchain. J’ai récemment suivi une formation en développement blockchain dans une école renommée afin d’atteindre cet objectif." : "Being part of the Web3 ecosystem for 3 years, I started to learn Web Development on my own in 2022 to consolidate the basics I got from my academic studies, in order to eventually work as a Blockchain Developer. I recently took a Blockchain development course in a renowned school in the field, to finally achieve this goal."}</p>
-          <a className="cv" href={(language === "fr") ? "cvfr.pdf" : "cven.pdf"} target="_blank">{(language === "fr") ? "Voir mon CV" : "See my resume"}</a>
+        <div className="portfolio main_content">
+        <header id="mainTopText">
+            <h1>{(language === "fr") ? "Salut, je m'appelle Nathanaël 👋" : "Hi, I'm Nathanaël 👋"}</h1>
+            <h2>{(language === "fr") ? "Je suis développeur Web & Blockchain" : "I'm a Web & Blockchain Developer"}</h2>
+        </header>
+        
+        <section className="mainPara">       
+                <p className='mainSmallText'>{(language === "fr") ? "Je n'aime pas trop parler de moi-même donc je vais écrire à la troisième personne (mais c'est bien moi qui écrit...)" : "I don't really like talking about myself so I'll write in the third person (but I'm actually the one writing...)"}</p>
+        </section>
+        
+        <section className="mainPara">
+            <img className="mainPageImage" src="/me1.png" />
+                <p><b>Nathanaël Kubski</b>{(language === "fr") ? " est né dans le sud de la France. Depuis son enfance, il s'est toujours intéressé aux nouvelles technologies et tout ce qui tourne autour des ordinateurs. En 2021, il a découvert le monde des cryptomonnaies. Bien qu'il ait perdu un peu d'argent, il tomba amoureux de la technologie derrière et décida de suivre une carrière comme architecte du Web 3 et de la blockchain." : " was born in Southern France. Even as a child, he has always been interested by new technologies and anything that had to do with computers. In 2021, he started to dive into the universe of cryptocurrencies. While he did lose a bit of money, he fell in love with the technology behind it and decided to pursue a career as an architect of the Web 3 and Blockchain technology."}</p>
+        </section>
+        
+        <section className="mainPara">
+                <p className="mainSmallText">{(language === "fr") ? "C'est quand même un peu étrange, je vais revenir à la première personne..." : "It's starting to feel a bit odd, I'll go back to writing in the first person..."}</p>
+        </section>
+        
+        <section className="mainPara">
+          <div id="mainJoke">
+            <img id="mainJokeFirstImg" className="mainPageImage" src="/me2.png" />
+            <p id="mainJokeFirstText">{(language === "fr") ? "Je ne suis pas vraiment ce genre de développeur..." : "I'm not really a developer like this..."}</p>
+            <p id="mainJokeSecondText">{(language === "fr") ? "... mais plutôt ce genre là." : "... but more like this."}</p>
+            <img id="mainJokeSecondImg" className="mainPageImage" src="/me3.png" />
+          </div>
+        </section>
+        
+        <section className="mainPara">
+            <div id="mainBottomPara">
+              <img className="mainPageImage" id="mainBottomParaImg" src="/me4.png" />
+              <p id="mainBottomFirstText">{(language === "fr") ? "Je parle français et anglais, et un petit peu espagnol (mais je m'améliore !)" : "I speak French and English, and a bit of Spanish (but it's improving !)"}</p>
+            <p id="mainBottomSecondText">{(language === "fr") ? "J'adore voyager, la course et la randonnée." : "I love traveling, running and hiking."}</p>
+            </div>
+        </section>
+        <a className="cv" href={(language === "fr") ? "cvfr.pdf" : "cven.pdf"} target="_blank">{(language === "fr") ? "Voir mon CV" : "See my resume"}</a>
         </div>
       </div>
     </>
