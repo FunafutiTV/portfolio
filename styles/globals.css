@@ -476,12 +476,7 @@ nav ul li:active {
   right: 0.8em;
   width: 2em;
   height: 2em;
-  background-image: url("../public/cross.png");
   background-size: contain;
-}
-
-#closePopup:hover {
-  background-image: url("../public/crossHover.png");
 }
 
 #closePopup:hover {
