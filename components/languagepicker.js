@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import uk from "../public/uk.png";
-import france from "..public/france.png";
+import france from "../public/france.png";
 
 export default function LanguagepPicker({ language, setLanguage }) {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
