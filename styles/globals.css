@@ -283,14 +283,6 @@ nav ul li:active {
   font-weight: bold;
 }
 
-#language-picker .en {
-  background-image: url('../public/uk.png');
-}
-
-#language-picker .fr {
-  background-image: url('../public/france.png');
-}
-
 .dropdown {
   position: relative;
   z-index: 1;

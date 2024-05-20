@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import uk from "../public/uk.png";
+import france from "..public/france.png";
 
 export default function LanguagepPicker({ language, setLanguage }) {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -25,15 +27,15 @@ export default function LanguagepPicker({ language, setLanguage }) {
         <div id="language-picker">
         {(language === "fr") ? 
             <>
-                <button className="fr" onMouseEnter={openDropdown} onMouseLeave={toggleDropdown}>Français</button>
+                <button style={{ backgroundImage: `url(${france.src})` }} onMouseEnter={openDropdown} onMouseLeave={toggleDropdown}>Français</button>
                 {isDropdownOpen && <div className="dropdown">
-                    <button className="en" onMouseEnter={openDropdown} onMouseLeave={toggleDropdown} onClick={handleEnglishClick}>Anglais</button>
+                    <button style={{ backgroundImage: `url(${uk.src})` }} onMouseEnter={openDropdown} onMouseLeave={toggleDropdown} onClick={handleEnglishClick}>Anglais</button>
                 </div>}
             </> :
             <>
-                <button className="en" onMouseEnter={openDropdown} onMouseLeave={toggleDropdown}>English</button>
+                <button style={{ backgroundImage: `url(${uk.src})` }} onMouseEnter={openDropdown} onMouseLeave={toggleDropdown}>English</button>
                 {isDropdownOpen && <div className="dropdown">
-                    <button className="fr" onMouseEnter={openDropdown} onMouseLeave={toggleDropdown} onClick={handleFrenchClick}>French</button>
+                    <button style={{ backgroundImage: `url(${france.src})` }} onMouseEnter={openDropdown} onMouseLeave={toggleDropdown} onClick={handleFrenchClick}>French</button>
                 </div>}
             </>
         }
