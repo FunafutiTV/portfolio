@@ -88,45 +88,55 @@ export default function Project({ language }) {
                     <p>{voting.description}</p>
                 </div>
             </div>
-            <div className="projectPopup" style={{display: (displayPopup === "blocknews") ? "initial" : "none"}}>
-                <div id="closePopup" style={{ backgroundImage: `url(${cross.src})` }} onClick={() => {setDisplayPopup("")}}/>
-                <h1>{blocknews.displayName}</h1>
-                <p>{blocknews.fullDescription}</p>
-                <iframe src={blocknews.youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-                <p><b>Stack : </b>{blocknews.stack}</p>
-                <p>{(language === "fr") ? <>Vous pouvez voir le code sur <Link href={blocknews.github} target="_blank">Github</Link> et essayer l'application déployée sur <Link href={blocknews.vercel} target="_blank">Vercel</Link></> : <>You can check the code on <Link href={blocknews.github} target="_blank">Github</Link> and try the deployed app on <Link href={blocknews.vercel} target="_blank">Vercel</Link></>}</p>
+            <div id="popupContainer" style={{top: (displayPopup === "blocknews") ? "5vh" : "-100vh", opacity: (displayPopup === "blocknews") ? "1" : "0"}}>
+                <div className="projectPopup">
+                    <div id="closePopup" style={{ backgroundImage: `url(${cross.src})` }} onClick={() => {setDisplayPopup("")}}/>
+                    <h1>{blocknews.displayName}</h1>
+                    <p>{blocknews.fullDescription}</p>
+                    <iframe src={blocknews.youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                    <p><b>Stack : </b>{blocknews.stack}</p>
+                    <p>{(language === "fr") ? <>Vous pouvez voir le code sur <Link href={blocknews.github} target="_blank">Github</Link> et essayer l'application déployée sur <Link href={blocknews.vercel} target="_blank">Vercel</Link></> : <>You can check the code on <Link href={blocknews.github} target="_blank">Github</Link> and try the deployed app on <Link href={blocknews.vercel} target="_blank">Vercel</Link></>}</p>
+                </div>
             </div>
-            <div className="projectPopup" style={{display: (displayPopup === "share") ? "initial" : "none"}}>
-                <div id="closePopup" style={{ backgroundImage: `url(${cross.src})` }} onClick={() => {setDisplayPopup("")}}/>
-                <h1>{share.displayName}</h1>
-                <p>{share.fullDescription}</p>
-                <iframe src={share.youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-                <p><b>Stack : </b>{share.stack}</p>
-                <p>{(language === "fr") ? <>Vous pouvez voir le code sur <Link href={share.github} target="_blank">Github</Link> et essayer l'application déployée sur <Link href={share.vercel} target="_blank">Vercel</Link></> : <>You can check the code on <Link href={share.github} target="_blank">Github</Link> and try the deployed app on <Link href={share.vercel} target="_blank">Vercel</Link></>}</p>
+            <div id="popupContainer" style={{top: (displayPopup === "share") ? "5vh" : "-100vh", opacity: (displayPopup === "share") ? "1" : "0"}}>
+                <div className="projectPopup">
+                    <div id="closePopup" style={{ backgroundImage: `url(${cross.src})` }} onClick={() => {setDisplayPopup("")}}/>
+                    <h1>{share.displayName}</h1>
+                    <p>{share.fullDescription}</p>
+                    <iframe src={share.youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                    <p><b>Stack : </b>{share.stack}</p>
+                    <p>{(language === "fr") ? <>Vous pouvez voir le code sur <Link href={share.github} target="_blank">Github</Link> et essayer l'application déployée sur <Link href={share.vercel} target="_blank">Vercel</Link></> : <>You can check the code on <Link href={share.github} target="_blank">Github</Link> and try the deployed app on <Link href={share.vercel} target="_blank">Vercel</Link></>}</p>
+                </div>
             </div>
-            <div className="projectPopup" style={{display: (displayPopup === "countrygame") ? "initial" : "none"}}>
-                <div id="closePopup" style={{ backgroundImage: `url(${cross.src})` }} onClick={() => {setDisplayPopup("")}}/>
-                <h1>{countrygame.displayName}</h1>
-                <p>{countrygame.fullDescription}</p>
-                <iframe src={countrygame.youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-                <p><b>Stack : </b>{countrygame.stack}</p>
-                <p>{(language === "fr") ? <>Vous pouvez voir le code sur <Link href={countrygame.github} target="_blank">Github</Link> et essayer l'application déployée sur <Link href={countrygame.vercel} target="_blank">Vercel</Link></> : <>You can check the code on <Link href={countrygame.github} target="_blank">Github</Link> and try the deployed app on <Link href={countrygame.vercel} target="_blank">Vercel</Link></>}</p>
+            <div id="popupContainer" style={{top: (displayPopup === "countrygame") ? "5vh" : "-100vh", opacity: (displayPopup === "countrygame") ? "1" : "0"}}>
+                <div className="projectPopup">
+                    <div id="closePopup" style={{ backgroundImage: `url(${cross.src})` }} onClick={() => {setDisplayPopup("")}}/>
+                    <h1>{countrygame.displayName}</h1>
+                    <p>{countrygame.fullDescription}</p>
+                    <iframe src={countrygame.youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                    <p><b>Stack : </b>{countrygame.stack}</p>
+                    <p>{(language === "fr") ? <>Vous pouvez voir le code sur <Link href={countrygame.github} target="_blank">Github</Link> et essayer l'application déployée sur <Link href={countrygame.vercel} target="_blank">Vercel</Link></> : <>You can check the code on <Link href={countrygame.github} target="_blank">Github</Link> and try the deployed app on <Link href={countrygame.vercel} target="_blank">Vercel</Link></>}</p>
+                </div>
             </div>
-            <div className="projectPopup" style={{display: (displayPopup === "clicktest") ? "initial" : "none"}}>
-                <div id="closePopup" style={{ backgroundImage: `url(${cross.src})` }} onClick={() => {setDisplayPopup("")}}/>
-                <h1>{clicktest.displayName}</h1>
-                <p>{clicktest.fullDescription}</p>
-                <iframe src={clicktest.youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-                <p><b>Stack : </b>{clicktest.stack}</p>
-                <p>{(language === "fr") ? <>Vous pouvez voir le code sur <Link href={clicktest.github} target="_blank">Github</Link> et essayer l'application déployée sur <Link href={clicktest.vercel} target="_blank">Vercel</Link></> : <>You can check the code on <Link href={clicktest.github} target="_blank">Github</Link> and try the deployed app on <Link href={clicktest.vercel} target="_blank">Vercel</Link></>}</p>
+            <div id="popupContainer" style={{top: (displayPopup === "clicktest") ? "5vh" : "-100vh", opacity: (displayPopup === "clicktest") ? "1" : "0"}}>
+                <div className="projectPopup" >
+                    <div id="closePopup" style={{ backgroundImage: `url(${cross.src})` }} onClick={() => {setDisplayPopup("")}}/>
+                    <h1>{clicktest.displayName}</h1>
+                    <p>{clicktest.fullDescription}</p>
+                    <iframe src={clicktest.youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                    <p><b>Stack : </b>{clicktest.stack}</p>
+                    <p>{(language === "fr") ? <>Vous pouvez voir le code sur <Link href={clicktest.github} target="_blank">Github</Link> et essayer l'application déployée sur <Link href={clicktest.vercel} target="_blank">Vercel</Link></> : <>You can check the code on <Link href={clicktest.github} target="_blank">Github</Link> and try the deployed app on <Link href={clicktest.vercel} target="_blank">Vercel</Link></>}</p>
+                </div>
             </div>
-            <div className="projectPopup" style={{display: (displayPopup === "voting") ? "initial" : "none"}}>
-                <div id="closePopup" style={{ backgroundImage: `url(${cross.src})` }} onClick={() => {setDisplayPopup("")}}/>
-                <h1>{voting.displayName}</h1>
-                <p>{voting.fullDescription}</p>
-                <iframe src={voting.youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-                <p><b>Stack : </b>{voting.stack}</p>
-                <p>{(language === "fr") ? <>Vous pouvez voir le code sur <Link href={voting.github} target="_blank">Github</Link> et essayer l'application déployée sur <Link href={voting.vercel} target="_blank">Vercel</Link></> : <>You can check the code on <Link href={voting.github} target="_blank">Github</Link> and try the deployed app on <Link href={voting.vercel} target="_blank">Vercel</Link></>}</p>
+            <div id="popupContainer" style={{top: (displayPopup === "voting") ? "5vh" : "-100vh", opacity: (displayPopup === "voting") ? "1" : "0"}}>
+                <div className="projectPopup" >
+                    <div id="closePopup" style={{ backgroundImage: `url(${cross.src})` }} onClick={() => {setDisplayPopup("")}}/>
+                    <h1>{voting.displayName}</h1>
+                    <p>{voting.fullDescription}</p>
+                    <iframe src={voting.youtube} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                    <p><b>Stack : </b>{voting.stack}</p>
+                    <p>{(language === "fr") ? <>Vous pouvez voir le code sur <Link href={voting.github} target="_blank">Github</Link> et essayer l'application déployée sur <Link href={voting.vercel} target="_blank">Vercel</Link></> : <>You can check the code on <Link href={voting.github} target="_blank">Github</Link> and try the deployed app on <Link href={voting.vercel} target="_blank">Vercel</Link></>}</p>
+                </div>
             </div>
         </div>
     )

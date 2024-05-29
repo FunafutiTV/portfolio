@@ -449,23 +449,28 @@ nav ul li:active {
   width: 100%;
 }
 
-.projectPopup {
+#popupContainer {
   z-index: 2;
   position: fixed;
   left: 10vw;
   right: 10vw;
-  top: 5vh;
+  transition: top 0.4s linear, opacity 0.6s;
   max-height: 90vh;
-  overflow-y: auto;
   border-radius: 20px;
   background-color: rgb(110, 110, 110);
   padding-bottom: 1em;
 }
 
+.projectPopup {
+  overflow: auto;
+  width: 77vw;
+  max-height: 92vh;
+}
+
 #closePopup {
   position: absolute;
-  top: 0.8em;
-  right: 0.8em;
+  top: 1.5em;
+  right: 3em;
   width: 2em;
   height: 2em;
   background-size: contain;
